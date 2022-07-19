@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Signika+Negative&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/app.css">
+    
+    <title>MovieAPI</title>
+</head>
+<body>
+    <h1 id="PAGE_TITLE" onclick="" >MovieAPI</h1>
+
+    <header>
+        <div id="THEMES">
+            <ul>
+                <li><button>Peliculas</button></li>
+                <li><button>Series</button></li>
+                <li><button>Mas recientes</button></li>
+                <li><button>Mejores valoradas</button></li>
+            </ul>
+
+            <div>
+                <form id="SEARCH_BAR" action="">
+                    <input id="SEARCH_INPUT" type="text" placeholder="Buscar..." spellcheck="false">
+                    <div></div>
+                    <input id="SEARCH_BUTTON" type="button" value="" >
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section id="GENRES">
+        <!-- <h3 class="genre"></h3> -->
+    </section>
+
+    <section id="POSTER_SLIDE">
+        <article class="poster-container">
+            <img class="poster-img" src="https://image.tmdb.org/t/p/original/wcKFYIiVDvRURrzglV9kGu7fpfY.jpg" alt="Doctor Strange">
+            <div>
+                <h2 class="text-white poster-movieTitle">Doctor Strange in the Multiverse of Madness</h2>
+                <h3 class="text-white description-movieTitle">Viaja a lo desconocido con el Doctor Strange, quien, con la ayuda de tanto antiguos como nuevos aliados místicos, recorre las complejas y peligrosas realidades alternativas del multiverso para enfrentarse a un nuevo y misterioso adversario.</h3>
+            </div>
+        </article>
+    </section>
+
+    <section id="PREVIEW">
+        <div class="previews-movieHeader">
+            <h2 class="preview-movieTitle">Tendencias diarias</h2>
+            <button class="preview-movieBtn">Ver más</button>
+        </div>
+
+        <article id="PREVIEW_MOVIELIST">
+        </article>
+    </section>
+
+    <section id="CATEGORY">
+        <div class="category-movieHeader">
+            <h2 class="category-movie">Categoria</h2>
+        </div>
+
+        <article id="CATEGORY_MOVIELIST">
+            <div class="category-movieContainer">
+                <img class="category-movieImg" src="https://image.tmdb.org/t/p/w500/uOnutpXJdDWyWzUCkApkahPSKuy.jpg" alt="">
+                <h3 class="category-movieTitle">Doctor Strange</h3>
+            </div>
+
+            <div class="category-movieContainer">
+                <img class="category-movieImg" src="https://image.tmdb.org/t/p/w500/uOnutpXJdDWyWzUCkApkahPSKuy.jpg" alt="">
+                <h3 class="category-movieTitle">Doctor Strange</h3>
+            </div>
+
+            <div class="category-movieContainer">
+                <img class="category-movieImg" src="https://image.tmdb.org/t/p/w500/uOnutpXJdDWyWzUCkApkahPSKuy.jpg" alt="">
+                <h3 class="category-movieTitle">Doctor Strange</h3>
+            </div>
+        </article>
+    </section>
+
+    <section id="MOVIE_VIEW">
+        <article>
+            <img class="background-img" src="https://image.tmdb.org/t/p/original/wcKFYIiVDvRURrzglV9kGu7fpfY.jpg" alt="">
+            <div class="movieDescription-container">
+                <img class="movieView-img" src="https://image.tmdb.org/t/p/w500/sXeWfpT1EhG7f4uBouqraOhmouH.jpg" alt="">
+                <div class="movieViewDescription-container">
+                    <!-- <h2>Jurassic World: Dominion</h2>
+                    <h3>Ciencia Ficcion, Aventura</h3>
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Est blanditiis dolorum amet eligendi optio in temporibus.
+                        Assumenda quidem dolor iure eius odit dolorem porro at asperiores, fugit non, obcaecati officia?
+                    </h1>
+                    <h4>Calificacion 5/5</h4> -->
+                </div>
+            </div>
+        </article>
+
+        <h1 class="relatedMovies-title">Peliculas similares</h1>
+        <article id="RELATED_MOVIES">
+            <div class="relatedMovies-container"></div>
+        </article>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./src/nodes.js"></script>
+    <script src="./src/main.js"></script>
+    <script src="./src/navigation.js"></script>
+</body>
+</html>

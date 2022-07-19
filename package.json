@@ -1,0 +1,28 @@
+{
+  "name": "moviesapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AquaMarine98/MoviesAPI.git"
+  },
+  "author": "@aqua",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AquaMarine98/MoviesAPI/issues"
+  },
+  "homepage": "https://github.com/AquaMarine98/MoviesAPI#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "fetch": "^1.1.0",
+    "node": "^18.4.0",
+    "node-fetch": "^3.2.6",
+    "node-module": "^2.0.0",
+    "node-modules": "^0.0.1"
+  },
+  "type": "module"
+}
